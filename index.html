@@ -5,34 +5,199 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/0899bbe477.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Document</title>
   </head>
   <body>
     <nav>
-      <a class="nav-links" href="">Twitter</a>
-      <a class="nav-links" href="">Home</a>
-      <a class="nav-links" href="">Stars</a>
-      <a class="nav-links" href="">Search Box</a>
+      <div class="navbar">
+        <div class="nav-links">
+          <a href="" class="header-logo">
+            <i class="devicon-twitter-original"></i>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="" class="header-home"> Home </a>
+          <a href="" class="header-star">
+            <i class="material-icons"> auto_awesome </i>
+          </a>
+        </div>
+        <div class="nav-links">
+          <input type="text" class="header-search" />
+        </div>
+      </div>
     </nav>
-    <main>
+    <section>
       <div class="grid-container">
         <div class="grid-item">
           <ul class="side-bar">
-            <li>Home</li>
-            <li>Explore</li>
-            <li>Notification</li>
-            <li>Messages</li>
-            <li>Bookmarks</li>
-            <li>Lists</li>
-            <li>Profile</li>
-            <li>More</li>
-            <li>Tweet</li>
-            <li></li>
+            <li class="side-bar-list">
+              <span class="material-icons"> home </span>
+              Home
+            </li>
+            <li class="side-bar-list">
+              <span class="material-icons"> tag </span>
+              Explore
+            </li>
+            <li class="side-bar-list">
+              <span class="material-icons-outlined"> notifications </span>
+              Notification
+            </li>
+            <li class="side-bar-list">
+              <span class="material-icons-outlined"> email </span>
+              Messages
+            </li>
+            <li class="side-bar-list">
+              <span class="material-icons-outlined"> bookmark_border </span
+              >Bookmarks
+            </li>
+            <li class="side-bar-list">
+              <span class="material-icons-outlined"> list_alt </span>Lists
+            </li>
+            <li class="side-bar-list">
+              <span class="material-icons-outlined"> person </span>Profile
+            </li>
+            <li class="side-bar-list">
+              <span class="material-icons-outlined"> more </span>More
+            </li>
+            <li>
+              <button class="tweet-button">Tweet</button>
+            </li>
           </ul>
         </div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
+
+        <div class="grid-item">
+          <div class="tweet">
+            <div class="tweet-area">
+              <div class="user-icon">
+                <img class="profile_pic" src="./16_20201128.jpg" alt="" />
+              </div>
+              <div tweet-contents>
+                <p>What's happening?</p>
+              </div>
+              <div class="tweet-options">
+                <ul>
+                  <li class="tweet-attachments">
+                    <span class="material-icons-outlined"> image </span>
+                  </li>
+                  <li class="tweet-attachments">
+                    <span class="material-icons-outlined"> gif_box </span>
+                  </li>
+                  <li class="tweet-attachments">
+                    <span class="material-icons"> align_horizontal_left </span>
+                  </li>
+                  <li class="tweet-attachments">
+                    <span class="material-icons-outlined">
+                      sentiment_satisfied
+                    </span>
+                  </li>
+                  <li class="tweet-attachments">
+                    <span class="material-icons"> calendar_today </span>
+                  </li>
+                  <li class="tweet-attachments">
+                    <span class="material-icons-outlined"> place </span>
+                  </li>
+                  <button class="tweet-button-small">Tweet</button>
+                </ul>
+              </div>
+            </div>
+
+            <div class="show-more-tweets">
+              <p>Show more Tweets</p>
+            </div>
+          </div>
+          <div class="tweet-list">
+            <div class="tweet-list">
+              <div class="tweet-area">
+                <div class="user-icon">
+                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
+                </div>
+                <div tweet-contents>
+                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
+                </div>
+              </div>
+              <div class="tweet-area">
+                <div class="user-icon">
+                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
+                </div>
+                <div tweet-contents>
+                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
+                </div>
+              </div>
+              <div class="tweet-area">
+                <div class="user-icon">
+                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
+                </div>
+                <div tweet-contents>
+                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
+                </div>
+              </div>
+              <div class="tweet-area">
+                <div class="user-icon">
+                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
+                </div>
+                <div tweet-contents>
+                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
+                </div>
+              </div>
+              <div class="tweet-area">
+                <div class="user-icon">
+                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
+                </div>
+                <div tweet-contents>
+                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
+                </div>
+              </div>
+              <div class="tweet-area">
+                <div class="user-icon">
+                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
+                </div>
+                <div tweet-contents>
+                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
+                </div>
+              </div>
+              <div class="tweet-area">
+                <div class="user-icon">
+                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
+                </div>
+                <div tweet-contents>
+                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="board">
+            <div>
+              <p style="font-weight: bold">What's happening</p>
+            </div>
+            <div class="article">
+              <div class="article-item">
+                <h2 class="title">War in Ukraine LIVE</h2>
+                <p class="description">testtesttesttesttesttest</p>
+              </div>
+              <div class="article-item">
+                <img class="article-img" src="./a0zz3vzb.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </section>
   </body>
 </html>
