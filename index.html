@@ -22,27 +22,14 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <div class="navbar">
-        <div class="nav-links">
-          <a href="" class="header-logo">
-            <i class="devicon-twitter-original"></i>
-          </a>
-        </div>
-        <div class="nav-links">
-          <a href="" class="header-home"> Home </a>
-          <a href="" class="header-star">
-            <i class="material-icons"> auto_awesome </i>
-          </a>
-        </div>
-        <div class="nav-links">
-          <input type="text" class="header-search" />
-        </div>
-      </div>
-    </nav>
     <section>
       <div class="grid-container">
         <div class="grid-item">
+          <div class="twitter-logo">
+            <a href="" class="header-logo">
+              <i class="devicon-twitter-original"></i>
+            </a>
+          </div>
           <ul class="side-bar">
             <li class="side-bar-list">
               <span class="material-icons"> home </span>
@@ -85,44 +72,62 @@
               <div class="user-info user-profile-item">
                 <span class="username">Koki Sakai</span>
                 <span class="userid">@le_pereza</span>
+                <span
+                  class="material-icons-outlined"
+                  style="padding-left: 30px"
+                >
+                  more_horiz
+                </span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="grid-item">
+          <div class="nav-center">
+            <div class="flex-container">
+              <a href="" class="header-home flex-item"> Home </a>
+              <a href="" class="header-star flex-item">
+                <i class="material-icons"> auto_awesome </i>
+              </a>
+            </div>
+          </div>
           <div class="tweet">
-            <div class="tweet-area">
-              <div class="user-icon">
+            <div class="flex-container">
+              <div class="flex-item">
                 <img class="profile_pic" src="./16_20201128.jpg" alt="" />
               </div>
-              <div tweet-contents>
-                <p>What's happening?</p>
-              </div>
-              <div class="tweet-options">
-                <ul>
-                  <li class="tweet-attachments">
-                    <span class="material-icons-outlined"> image </span>
-                  </li>
-                  <li class="tweet-attachments">
-                    <span class="material-icons-outlined"> gif_box </span>
-                  </li>
-                  <li class="tweet-attachments">
-                    <span class="material-icons"> align_horizontal_left </span>
-                  </li>
-                  <li class="tweet-attachments">
-                    <span class="material-icons-outlined">
-                      sentiment_satisfied
-                    </span>
-                  </li>
-                  <li class="tweet-attachments">
-                    <span class="material-icons"> calendar_today </span>
-                  </li>
-                  <li class="tweet-attachments">
-                    <span class="material-icons-outlined"> place </span>
-                  </li>
-                  <button class="tweet-button-small">Tweet</button>
-                </ul>
+              <div class="flex-item">
+                <div class="open-tweet-contents">What's happening?</div>
+                <div class="tweet-options flex-container">
+                  <ul class="flex-item">
+                    <li>
+                      <span class="material-icons-outlined"> image </span>
+                    </li>
+                    <li>
+                      <span class="material-icons-outlined"> gif_box </span>
+                    </li>
+                    <li>
+                      <span class="material-icons">
+                        align_horizontal_left
+                      </span>
+                    </li>
+                    <li>
+                      <span class="material-icons-outlined">
+                        sentiment_satisfied
+                      </span>
+                    </li>
+                    <li>
+                      <span class="material-icons"> calendar_today </span>
+                    </li>
+                    <li>
+                      <span class="material-icons-outlined"> place </span>
+                    </li>
+                  </ul>
+                  <div class="flex-item open-tweet-button">
+                    <button class="tweet-button-small">Tweet</button>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -131,68 +136,59 @@
             </div>
           </div>
           <div class="tweet-list">
-            <div class="tweet-list">
-              <div class="tweet-area">
-                <div class="user-icon">
-                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
-                </div>
-                <div tweet-contents>
-                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
+            <div class="flex-container tweet-list-items">
+              <div class="flex-item">
+                <img class="profile_pic" src="./16_20201128.jpg" alt="" />
+              </div>
+
+              <div class="flex-item">
+                <div class="tweet-item">
+                  <span class="username">Koki Sakai</span>
+                  <span class="userid">@le_pereza ・ 5h</span>
+                  <span class="tweet-contents"
+                    >testtesttesttesttesttesttesttesttest</span
+                  >
+                  <span class="tweet-contents"
+                    >testtesttesttesttesttesttesttesttesttesttesttesttest</span
+                  >
+                  <span class="tweet-contents"
+                    >testtesttesttesttesttesttesttesttesttesttest</span
+                  >
+                  <div>
+                    <ul>
+                      <li>
+                        <span class="material-icons-outlined">
+                          chat_bubble_outline
+                        </span>
+                      </li>
+                      <li>
+                        <span class="material-icons-outlined"> repeat </span>
+                      </li>
+                      <li>
+                        <span class="material-icons-outlined">
+                          favorite_border
+                        </span>
+                      </li>
+                      <li>
+                        <span class="material-icons-outlined">
+                          present_to_all
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="tweet-area">
-                <div class="user-icon">
-                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
-                </div>
-                <div tweet-contents>
-                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
-                </div>
-              </div>
-              <div class="tweet-area">
-                <div class="user-icon">
-                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
-                </div>
-                <div tweet-contents>
-                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
-                </div>
-              </div>
-              <div class="tweet-area">
-                <div class="user-icon">
-                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
-                </div>
-                <div tweet-contents>
-                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
-                </div>
-              </div>
-              <div class="tweet-area">
-                <div class="user-icon">
-                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
-                </div>
-                <div tweet-contents>
-                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
-                </div>
-              </div>
-              <div class="tweet-area">
-                <div class="user-icon">
-                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
-                </div>
-                <div tweet-contents>
-                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
-                </div>
-              </div>
-              <div class="tweet-area">
-                <div class="user-icon">
-                  <img class="profile_pic" src="./16_20201128.jpg" alt="" />
-                </div>
-                <div tweet-contents>
-                  <p>testtesttesttesttesttesttesttesttesttesttesttesttest</p>
-                </div>
+              <div class="flex-item">
+                <span class="material-icons-outlined"> more_horiz </span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="grid-item">
+          <div class="nav-search">
+            <input type="text" class="header-search" />
+          </div>
           <div class="board">
             <p>What's happening</p>
             <div class="article">
