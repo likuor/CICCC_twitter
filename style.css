@@ -265,8 +265,8 @@ input {
 
 .board {
   background-color: #f7f9f9;
+  margin: 55px auto;
   width: 90%;
-  margin: auto;
   border-radius: 15px;
   padding: 0.1vw 0.8vw;
 }
@@ -310,6 +310,10 @@ input {
   font-size: 12px;
   font-weight: normal;
   color: #536471;
+}
+
+.detail span {
+  color: #1d9bf0;
 }
 
 .grid-container {
