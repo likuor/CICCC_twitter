@@ -1,17 +1,33 @@
+.tweet-button {
+  background-color: #1d9bf0;
+  color: #fff;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 30px;
+  font-size: 18px;
+  height: 50px;
+  width: 200px;
+}
+
+.tweet-button-small {
+  background-color: #1d9bf0;
+  color: #fff;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 30px;
+  font-size: 14px;
+  height: 35px;
+  width: 80px;
+}
+
 * {
   box-sizing: border-box;
-  font-family: TwitterChirp, -apple-system, 'system-ui', 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif;
+  font-family: TwitterChirp, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 a {
   text-decoration: none;
   color: #000;
-}
-
-.side-bar span {
-  vertical-align: -4px;
-  padding-right: 20px;
 }
 
 input {
@@ -20,12 +36,59 @@ input {
   background-color: #eff3f4;
 }
 
+ul {
+  padding: 0;
+}
+
+.grid-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 68%;
+}
+.grid-container .grid-item {
+  border-right: 1px solid #eff3f4;
+  font-size: 20px;
+  text-align: center;
+}
+.grid-container .grid-item:first-child {
+  padding-right: 40px;
+  position: fixed;
+  height: 100%;
+}
+.grid-container .grid-item:nth-child(2) {
+  margin-left: 280px;
+  position: left;
+  width: 32vw;
+}
+.grid-container .grid-item:last-child {
+  width: 20vw;
+  position: right;
+  border-right: none;
+}
+
 .flex-container {
   display: flex;
 }
-
-.flex-item {
+.flex-container .flex-item {
   flex-grow: 1;
+}
+
+.profile_pic {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.side-bar {
+  list-style: none;
+  text-align: left;
+}
+.side-bar span {
+  vertical-align: -4px;
+  padding-right: 20px;
+}
+.side-bar .side-bar-list {
+  height: 50px;
 }
 
 .twitter-logo {
@@ -34,15 +97,9 @@ input {
   margin-bottom: 50px;
   padding-top: 10px;
 }
-
-.header-logo {
+.twitter-logo .header-logo {
   margin-left: 40px;
   font-size: 24px;
-}
-
-.side-bar {
-  list-style: none;
-  text-align: left;
 }
 
 .side-bar-user-profile {
@@ -52,17 +109,13 @@ input {
   height: 60px;
   display: flex;
 }
-
-.user-profile-item {
+.side-bar-user-profile .user-profile-item {
   flex-grow: 1;
 }
-
-.side-bar-user-icon {
-  padding-left: 45px;
+.side-bar-user-profile .side-bar-user-icon {
   text-align: left;
 }
-
-.user-info {
+.side-bar-user-profile .user-info {
   text-align: left;
   padding-left: 10px;
   height: auto;
@@ -78,30 +131,8 @@ input {
   color: #536471;
 }
 
-.side-bar-list {
-  height: 50px;
-}
-
-.tweet-button {
-  background-color: #1d9bf0;
-  font-weight: bold;
-  font-size: 18px;
-  color: #fff;
-  height: 50px;
-  width: 200px;
-  border-radius: 30px;
-  border-style: none;
-}
-
-.tweet-button-small {
-  background-color: #1d9bf0;
-  font-weight: bold;
-  font-size: 14px;
-  color: #fff;
-  height: 35px;
-  width: 80px;
-  border-radius: 30px;
-  border-style: none;
+.more-icon {
+  padding: 10px 30px;
 }
 
 /* center */
@@ -117,18 +148,11 @@ input {
   border-left: #eff3f4 solid 1px;
   border-right: #eff3f4 solid 1px;
 }
-
 .nav-center .flex-item:nth-child(2) {
   text-align: right;
 }
-
-.header-home {
+.nav-center .header-home {
   padding-left: 10px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.header-star {
   font-size: 24px;
   font-weight: bold;
 }
@@ -137,7 +161,6 @@ input {
   margin-top: 65px;
   padding-left: 10px;
 }
-
 .tweet .flex-item:nth-child(2) {
   flex-grow: 3.5;
 }
@@ -149,23 +172,19 @@ input {
 }
 
 .tweet-options ul {
-  padding: 0;
   text-align: left;
   margin-top: 50px;
 }
-
 .tweet-options li {
   display: inline-block;
 }
-
-.tweet-options li span {
+.tweet-options span {
   color: #3d9cf0;
   font-size: 22px;
   padding-right: 8px;
   line-height: center;
 }
-
-.open-tweet-button {
+.tweet-options .open-tweet-button {
   text-align: right;
   padding: 45px 10px 0px 0px;
 }
@@ -178,57 +197,39 @@ input {
   border-bottom: #eff3f4 solid 1px;
 }
 
+.tweet-list {
+  padding: 20px 0px;
+}
 .tweet-list .flex-item:nth-child(1) {
   text-align: left;
   padding-left: 26px;
   flex-grow: 0.2;
 }
-
 .tweet-list .flex-item:nth-child(2) {
   flex-grow: 3;
   padding-left: 10px;
 }
-
 .tweet-list .flex-item:nth-child(3) {
   text-align: right;
   padding-right: 10px;
   flex-grow: 1;
 }
 
-.tweet-list {
-  padding: 20px 0px;
-}
-
 .tweet-item {
   text-align: left;
 }
-
-.tweet-item ul {
-  padding: 0;
-}
-
 .tweet-item li {
   list-style: none;
   display: inline-block;
   padding-right: 70px;
 }
-
 .tweet-item li span {
   font-size: 16px;
   color: #536471;
 }
 
-.tweet-item .userid {
-  font-size: 14px;
-}
-
 .tweet-contents {
   font-size: 16px;
-}
-
-.profile_pic {
-  width: 50px;
-  border-radius: 50%;
 }
 
 /* right */
@@ -241,8 +242,7 @@ input {
   background-color: #fff;
   padding: 3px 0px;
 }
-
-.search-icon {
+.nav-search .search-icon {
   position: absolute;
   padding: 9px 0px 0px 20px;
   z-index: 2;
@@ -251,10 +251,9 @@ input {
   height: 2.375rem;
   text-align: center;
   pointer-events: none;
-  color: #aaa;
+  color: #536471;
 }
-
-.header-search {
+.nav-search .header-search {
   margin-left: 10px;
   height: 40px;
   width: 62%;
@@ -270,105 +269,64 @@ input {
   border-radius: 15px;
   padding: 0.1vw 0.8vw;
 }
-
 .board > p {
   font-size: 20px;
   text-align: left;
   font-weight: bold;
-  font-family: TwitterChirp, -apple-system, 'system-ui', 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif;
+  font-family: TwitterChirp, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .article {
   display: flex;
   text-align: left;
 }
-
-.article-item {
+.article .article-item {
   flex-grow: 1;
 }
-
-.article-img {
+.article .article-img {
   width: 70px;
   height: 70px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
-
-.title {
+.article .title {
   font-size: 12px;
   font-weight: normal;
   color: #536471;
 }
-
-.description {
+.article .description {
   font-size: 14px;
   font-weight: bold;
 }
-
-.detail {
+.article .detail {
   font-size: 12px;
   font-weight: normal;
   color: #536471;
 }
-
-.detail span {
-  color: #1d9bf0;
-}
-
-.grid-container {
-  margin: auto;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  width: 68%;
-}
-
-.grid-item {
-  border-right: 1px solid #eff3f4;
-  font-size: 20px;
-  text-align: center;
-}
-
-.grid-item:first-child {
-  padding-right: 40px;
-  position: fixed;
-  height: 100%;
-}
-
-.grid-item:nth-child(2) {
-  margin-left: 280px;
-  position: left;
-  width: 32vw;
-}
-
-.grid-item:last-child {
-  width: 20vw;
-  position: right;
-  border-right: none;
+.article .detail span {
+  color: #3d9cf0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
 /* Document
    ========================================================================== */
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /* Sections
    ========================================================================== */
-
 /**
  * Remove the margin in all browsers.
  */
-
 body {
   margin: 0;
 }
@@ -376,7 +334,6 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
-
 main {
   display: block;
 }
@@ -385,7 +342,6 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -393,35 +349,35 @@ h1 {
 
 /* Grouping content
    ========================================================================== */
-
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
    ========================================================================== */
-
 /**
  * Remove the gray background on active links in IE 10.
  */
-
 a {
   background-color: transparent;
 }
@@ -430,17 +386,19 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-
 b,
 strong {
   font-weight: bolder;
@@ -450,18 +408,18 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
  * Add the correct font size in all browsers.
  */
-
 small {
   font-size: 80%;
 }
@@ -470,7 +428,6 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-
 sub,
 sup {
   font-size: 75%;
@@ -489,39 +446,38 @@ sup {
 
 /* Embedded content
    ========================================================================== */
-
 /**
  * Remove the border on images inside links in IE 10.
  */
-
 img {
   border-style: none;
 }
 
 /* Forms
    ========================================================================== */
-
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-
 button,
 input {
   /* 1 */
@@ -532,7 +488,6 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-
 button,
 select {
   /* 1 */
@@ -542,22 +497,20 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
 /**
  * Remove the inner border and padding in Firefox.
  */
-
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -565,18 +518,16 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 /**
  * Correct the padding in Firefox.
  */
-
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -587,20 +538,24 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-
 progress {
   vertical-align: baseline;
 }
@@ -608,7 +563,6 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
-
 textarea {
   overflow: auto;
 }
@@ -617,19 +571,19 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-
-[type='checkbox'],
-[type='radio'] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -637,17 +591,17 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-
-[type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-
-[type='search']::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -655,19 +609,18 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
    ========================================================================== */
-
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
-
 details {
   display: block;
 }
@@ -675,18 +628,15 @@ details {
 /*
  * Add the correct display in all browsers.
  */
-
 summary {
   display: list-item;
 }
 
 /* Misc
    ========================================================================== */
-
 /**
  * Add the correct display in IE 10+.
  */
-
 template {
   display: none;
 }
@@ -694,7 +644,6 @@ template {
 /**
  * Add the correct display in IE 10.
  */
-
 [hidden] {
   display: none;
-}
+}/*# sourceMappingURL=index.css.map */
